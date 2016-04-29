@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Prime Weather Service Java API Developer Guide</title>
+  
+
+  <link rel="shortcut icon" href="./img/favicon.ico">
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="./css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="./css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="./css/highlight.css">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "None";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = "/";
+  </script>
+  
+  <script src="./js/jquery-2.1.1.min.js"></script>
+  <script src="./js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="./js/highlight.pack.js"></script>
+  <script src="./js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+    
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Prime Weather Service Java API Developer Guide</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 current">
+        <a class="current" href=".">Overview</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#what-is-prime-weather">What is Prime Weather?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#java-api">Java API</a></li>
+                
+            
+            </ul>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="getting-started/">Getting Started</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="class-overview/">API Classes</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="connections/">Web Service Connections</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="forecasts/">Weather Forecasts</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="historic-data/">Historic Weather Data</a>
+        
+    </li>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Prime Weather Service Java API Developer Guide</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <!-- <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div> -->
+          <div role="main">
+            <div class="section">
+              
+                <p><img alt="sun" src="./img/sun.gif" /> <span style="font-size: 2.0em; color: #2980B9;">Prime Weather Service&trade;</span></p>
+<h1>Java API Developer Guide</h1>
+
+<hr/>
+
+<!-- <span style="margin-left: 55px; font-size: 1.4em;">Java API Developer Guide</span> -->
+
+<h2 id="what-is-prime-weather">What is Prime Weather?</h2>
+<p><em>Prime Weather</em> is a cloud-based application that provides detailed 
+weather forecasts for the entire world. Using proprietary algorithms, Prime Weather
+combines data from 17 weather models to deliver current conditions and the most 
+accurate forecasts available. The application also provides detailed historic 
+weather data back to 1849 for the United States. </p>
+<h2 id="java-api">Java API</h2>
+<p>The Prime Weather Java API allows developers to quickly integrate weather data capabilities
+into their applications and provides functionality to easily retrieve current weather conditions, 
+forecasted future conditions, and historic data. The API is distributed as a single JAR file with several 
+supported versions available. Prime Weather recommends using the latest stable version for production 
+implementations.</p>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Release Date</th>
+<th>JAR Filename</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.0.3</td>
+<td>2016-04-02</td>
+<td>pws-403-beta.jar</td>
+<td>Latest beta version</td>
+</tr>
+<tr>
+<td><strong>3.7.1</strong></td>
+<td><strong>2016-03-15</strong></td>
+<td><strong>pws-371-stable.jar</strong></td>
+<td><strong>Latest stable version</strong></td>
+</tr>
+<tr>
+<td>3.7.0</td>
+<td>2015-10-12</td>
+<td>pws-370-stable.jar</td>
+<td>Stable</td>
+</tr>
+<tr>
+<td>2.4.2</td>
+<td>2015-06-13</td>
+<td>pws-242-stable.jar</td>
+<td>Stable</td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="getting-started/" class="btn btn-neutral float-right" title="Getting Started">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 Prime Weather Service, all rights reserved.</p>
+    
+  </div>
+
+  <!-- Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. -->
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="getting-started/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 0.15.3
+Build Date UTC : 2016-04-22 14:04:17.658102
+-->
