@@ -112,6 +112,13 @@
     </li>
 <li>
           
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About this Writing Sample</a>
+        
+    </li>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -148,21 +155,21 @@
 
 <hr/>
 
-<p>The Prime Weather Service provides functionality for accessing historic weather data 
-on an hourly basis for a single day or on a daily basis for range of days. Also, the service
-provides monthly data averages.</p>
+<p>Prime Weather provides functionality for accessing historic weather data 
+on an hourly basis for a single day and on a daily basis for range of days. 
+The service also provides monthly data averages.</p>
 <h2 id="creating-a-history-object">Creating a History Object</h2>
 <p>The History class provides methods for retrieving historic weather data. The 
 example below creates a new History object using a previously created Connection object 
-(see <a href="../connections">Connecting to Prime Weather Service</a>).</p>
+(see <a href="../connections">Connecting to Prime Weather</a>).</p>
 <pre><code class="java">//Create a History object.
 History history = new History(connection);
 </code></pre>
 
 <h2 id="getting-hourly-historic-weather-data">Getting Hourly Historic Weather Data</h2>
 <p>Use the getHourlyConditions() method of a History object to retrieve weather data for each hour 
-of a single day. The data is returned as a HashMap of Time and Conditions. The example below gets
-the weather data for January 1, 1962 and prints the low temperature values.</p>
+of a single day. The data is returned as a HashMap of Time and Conditions (&lt;String, String&gt;). 
+The example below gets the weather data for January 1, 1962 and prints the low temperature values.</p>
 <pre><code class="java">//Get historic data for a single day and print the low temperature values.
 java.time.LocalDate date = java.time.LocalDate.parse(&quot;1962-01-01&quot;);
 java.util.HashMap&lt;java.time.LocalTime, Conditions&gt; historicHourlyConditions = history.getHourlyConditions(date);
@@ -172,8 +179,8 @@ historicHourlyConditions.forEach((time, conditions)
 
 <h2 id="getting-daily-historic-weather-data">Getting Daily Historic Weather Data</h2>
 <p>Use the getDailyConditions() method of a History object to retrieve weather data for each hour 
-of a single day. The data is returned as a HashMap of Time and Conditions. The example below gets
-the weather data for January 1, 1962 and prints the low temperature values.</p>
+of a single day. The data is returned as a HashMap of Time and Conditions (&lt;String, String&gt;). 
+The example below gets the weather data for January 1, 1962 and prints the high temperature values.</p>
 <pre><code class="java">//Get historic data for a single day and print the high temperature values.
 java.time.LocalDate startDate = java.time.LocalDate.parse(&quot;2002-01-01&quot;);
 java.time.LocalDate endDate = java.time.LocalDate.parse(&quot;2002-01-31&quot;);
@@ -201,6 +208,8 @@ averageConditions.forEach((month, conditions)
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about/" class="btn btn-neutral float-right" title="About this Writing Sample">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../forecasts/" class="btn btn-neutral" title="Weather Forecasts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -233,6 +242,8 @@ averageConditions.forEach((month, conditions)
       
         <span><a href="../forecasts/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
+      
+        <span style="margin-left: 15px"><a href="../about/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

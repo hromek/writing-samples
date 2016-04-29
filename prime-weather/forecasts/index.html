@@ -118,6 +118,13 @@
     </li>
 <li>
           
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../about/">About this Writing Sample</a>
+        
+    </li>
+<li>
+          
         </ul>
       </div>
       &nbsp;
@@ -161,7 +168,7 @@ ten days. The API also provides access to active weather alerts and radar images
 <h2 id="creating-a-forecast-object">Creating a Forecast Object</h2>
 <p>The Forecast class provides methods for retrieving current and forecasted weather data. The 
 example below creates a new Forecast object using a previously created Connection object 
-(see <a href="../connections">Connecting to Prime Weather Service</a>) and changes the geographic location.</p>
+(see <a href="../connections">Connecting to Prime Weather</a>) and changes the geographic location.</p>
 <pre><code class="java">//Create a Forecast object.
 Forecast forecast = new Forecast(connection);
 
@@ -216,7 +223,7 @@ alerts.forEach((alert)
 <h2 id="getting-radar-images">Getting Radar Images</h2>
 <p>Use the getRadarImage() method of a Forecast object to retrieve dynamically generated
 radar images. The <em>range</em> parameter specifies the radius of the radar image coverage area 
-(the units match the units of measure currently configured on the Connection object). 
+(be sure to specify the range in units that match the units of measure currently configured on the Connection object). 
 The <em>animated</em> parameter determines whether the method returns a static PNG or an animated GIF image. 
 The animated image displays radar images for the past four hours in 10 minute intervals. The example below
 retrieves an animated radar image for the area covered by a 100 kilometer radius.</p>
