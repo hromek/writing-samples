@@ -137,7 +137,7 @@
         },
         {
             "location": "/about/",
-            "text": "About this Writing Sample\n\n\n\n\n\n\nJava and NetBeans\n\n\nPrime Weather\n is a fictitious cloud service application contrived for the\npurpose of supporting this writing sample. I used the \nNetBeans\n \nIntegrated Development Environment (IDE) to create skeleton classes for the API \nand to write the code examples. Using this approach enabled me to make sure\nthat all code examples compiled correctly.\n\n\nMarkdown and MkDocs\n\n\nI used Markdown and \nMkDocs\n to write this documentation \nexample. MkDocs is a static website generator that converts Markdown text to HTML\nweb pages. NetBeans provides a Markdown plugin, so I also used the NetBeans IDE as the \neditor for Markdown text. MkDocs ships with several standard themes and has\na framework for developing custom themes. I used one of the standard themes with\njust a few tweaks to the HTML and CSS.\n\n\nContact Information\n\n\n\u00a0\u00a0Bernie Hromek\n\n\u00a0\u00a0443-604-2727\n\n\u00a0\u00a0Bernie.Hromek@verizon.net",
+            "text": "About this Writing Sample\n\n\n\n\n\n\nJava and NetBeans\n\n\nPrime Weather\n is a fictitious cloud service application contrived for the\npurpose of supporting this writing sample. I used the \nNetBeans\n \nIntegrated Development Environment (IDE) to create skeleton classes for the API \nand to write the code examples. Using this approach enabled me to make sure\nthat all code examples compiled correctly.\n\n\nMarkdown and MkDocs\n\n\nI used Markdown and \nMkDocs\n to write this documentation \nexample. MkDocs is a static website generator that converts Markdown text to HTML\nweb pages. NetBeans provides a Markdown plugin, so I also used the NetBeans IDE as the \neditor for Markdown text. MkDocs ships with several standard themes and has\na framework for developing custom themes. I used one of the standard themes with\njust a few tweaks to the HTML and CSS.",
             "title": "About this Writing Sample"
         },
         {
@@ -149,11 +149,6 @@
             "location": "/about/#markdown-and-mkdocs",
             "text": "I used Markdown and  MkDocs  to write this documentation \nexample. MkDocs is a static website generator that converts Markdown text to HTML\nweb pages. NetBeans provides a Markdown plugin, so I also used the NetBeans IDE as the \neditor for Markdown text. MkDocs ships with several standard themes and has\na framework for developing custom themes. I used one of the standard themes with\njust a few tweaks to the HTML and CSS.",
             "title": "Markdown and MkDocs"
-        },
-        {
-            "location": "/about/#contact-information",
-            "text": "Bernie Hromek \u00a0\u00a0443-604-2727 \u00a0\u00a0Bernie.Hromek@verizon.net",
-            "title": "Contact Information"
         }
     ]
 }
