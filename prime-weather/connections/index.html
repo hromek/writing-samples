@@ -150,8 +150,8 @@
 <hr/>
 
 <h2 id="connecting-to-prime-weather">Connecting to Prime Weather</h2>
-<p>The first step in retrieving weather data is to create a Connection object. Forecast and History
-objects use connection objects to retrieve weather data. The example below
+<p>To retrieve weather data, you must first create a Connection object. Forecast and History
+objects use connection objects to retrieve weather data. The following example
 connects to Prime Weather using the specified Account Key.</p>
 <pre><code class="java">//Connect to the Prime Weather web application.
 String accountKey = &quot;3715qrwe&quot;;
@@ -160,16 +160,16 @@ Connection connection = new Connection(accountKey);
 
 <h2 id="setting-configuration-parameters">Setting Configuration Parameters</h2>
 <p>Connection objects contain properties for configuring the units of measure (English or Metric) 
-and for specifying geographic location. Once these properties are set, they will stay in effect
+and for specifying geographic location. Once you set these properties,they will stay in effect
 for all subsequent API calls until changed.
-The example below sets the units of measure to <em>Metric</em>, 
-and specifies the location of Ellicott City, MD (Latitude: 39.2673, Logitude: -76.7983) .</p>
+The following example sets the units of measure to <em>Metric</em>, 
+and specifies the location for Ellicott City, MD (Latitude: 39.2673, Logitude: -76.7983) .</p>
 <pre><code class="java">//Configure the location.
 double EllicottCityLatitude = 39.2673;
 double EllicottCityLogitude = -76.7983;
 connection.setLocation(EllicottCityLatitude, EllicottCityLogitude);
 
-//Configure the units of measure
+//Configure the units of measure.
 connection.setUnits(Connection.Units.METRIC);
 
 </code></pre>

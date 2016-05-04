@@ -162,7 +162,7 @@
 <hr/>
 
 <p>The Prime Weather Java API provides access to current 
-and forecasted weather conditions for any location on earth. 
+and forecasted weather conditions for any location on Earth. 
 The forecast data includes hourly conditions for the next 48 hours and daily conditions for the next
 ten days. The API also provides access to active weather alerts and radar images.</p>
 <h2 id="creating-a-forecast-object">Creating a Forecast Object</h2>
@@ -189,8 +189,8 @@ System.out.println(&quot;Current Humidity: &quot; + currentConditions.get(&quot;
 
 <h2 id="getting-hourly-forecasts">Getting Hourly Forecasts</h2>
 <p>Use the getHourlyForecast() method of a Forecast object to retrieve weather data for the 
-next 48 hours. The data is returned as a HashMap of Time and Conditions. The example below 
-gets hourly weather data and prints the all of the <em>time</em> and <em>Temperature</em> values. </p>
+next 48 hours. The method returns the data as a HashMap of Time and Conditions. The example below 
+gets hourly weather data and prints the all <em>Time</em> and <em>Temperature</em> values. </p>
 <pre><code class="java">//Get the Hourly forecast and print the Time and Temperature values.
 java.util.HashMap&lt;java.time.LocalTime, Conditions&gt; hourlyForecast = forecast.getHourlyForecast();
 hourlyForecast.forEach((time, conditions) 
@@ -199,9 +199,9 @@ hourlyForecast.forEach((time, conditions)
 </code></pre>
 
 <h2 id="getting-daily-forecasts">Getting Daily Forecasts</h2>
-<p>Use the getHourlyForecast() method of a Forecast object to retrieve weather data for the 
-next 10 days. The data is returned as a HashMap of Date and Conditions. The example below 
-gets daily weather data and prints the all of the <em>time</em> and <em>High Temperature</em> values. </p>
+<p>Use the getDailyForecast() method of a Forecast object to retrieve weather data for the 
+next 10 days. The method returns data as a HashMap of Date and Conditions. The example below 
+gets daily weather data and prints all <em>Date</em> and <em>High Temperature</em> values. </p>
 <pre><code class="java">//Get the Daily forecast and print the Date and Temperature values.
 java.util.HashMap&lt;java.time.LocalDate, Conditions&gt; DailyForecast = forecast.getDailyForecast();
 DailyForecast.forEach((date, conditions) 
@@ -211,7 +211,7 @@ DailyForecast.forEach((date, conditions)
 
 <h2 id="getting-weather-alerts">Getting Weather Alerts</h2>
 <p>Use the getAlerts() method of a Forecast object to retrieve an array of Alert objects representing 
-all currently active alerts for a location. Each Alert object consists of an <em>Alert Summary</em> 
+all currently active alerts for the current location. Each Alert object consists of an <em>Alert Summary</em> 
 and a <em>Discussion</em>, which provides detailed information about severe weather conditions. 
 The example below gets all current weather alerts and prints the alert summaries.</p>
 <pre><code class="java">//Get the alerts and print the summaries.

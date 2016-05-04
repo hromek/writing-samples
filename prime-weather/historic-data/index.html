@@ -168,7 +168,7 @@ History history = new History(connection);
 
 <h2 id="getting-hourly-historic-weather-data">Getting Hourly Historic Weather Data</h2>
 <p>Use the getHourlyConditions() method of a History object to retrieve weather data for each hour 
-of a single day. The data is returned as a HashMap of Time and Conditions (&lt;String, String&gt;). 
+of a single day. The method returns the data as a HashMap of Time and Conditions (&lt;String, String&gt;). 
 The example below gets the weather data for January 1, 1962 and prints the low temperature values.</p>
 <pre><code class="java">//Get historic data for a single day and print the low temperature values.
 java.time.LocalDate date = java.time.LocalDate.parse(&quot;1962-01-01&quot;);
@@ -179,7 +179,7 @@ historicHourlyConditions.forEach((time, conditions)
 
 <h2 id="getting-daily-historic-weather-data">Getting Daily Historic Weather Data</h2>
 <p>Use the getDailyConditions() method of a History object to retrieve weather data for each hour 
-of a single day. The data is returned as a HashMap of Time and Conditions (&lt;String, String&gt;). 
+of a single day. The method returns data as a HashMap of Time and Conditions (&lt;String, String&gt;). 
 The example below gets the weather data for January 1, 1962 and prints the high temperature values.</p>
 <pre><code class="java">//Get historic data for a single day and print the high temperature values.
 java.time.LocalDate startDate = java.time.LocalDate.parse(&quot;2002-01-01&quot;);
@@ -193,8 +193,8 @@ historicDailyConditions.forEach((historicDate, conditions)
 
 <h2 id="getting-monthly-averages">Getting Monthly Averages</h2>
 <p>Use the getAverageConditions() method of a History object to retrieve average weather conditions 
-for each month of a single year. The example below gets the average conditions for 2003 and
-prints the average high temperature values.</p>
+for each month of a single year. The method returns the data as a HashMap of Month and Conditions. 
+The example below gets the average conditions for 2003 and prints the average high temperature values.</p>
 <pre><code class="java">//Get the average conditions for the year 2003 and print the high average temperature values.
 int year = 2003;
 java.util.HashMap&lt;java.time.Month, Conditions&gt; averageConditions = history.getAverageConditions(year);
